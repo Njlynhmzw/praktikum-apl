@@ -43,11 +43,11 @@ int main() {
                 cout << "Masukkan jumlah setor tunai: " ;
                 cin >> jumlah ;
                 saldo += jumlah;
-                cout << "Saldo Anda adalah : " << saldo << endl;
+                cout << "Saldo Anda adalah : " << (int)saldo << endl;
                 break;
 
             case 2 :
-                cout << "Saldo anda adalah : " << saldo << endl;
+                cout << "Saldo anda adalah : " << (int)saldo << endl;
                 break;
 
             case 3 :
@@ -55,7 +55,7 @@ int main() {
                 cin >> jumlah;
                 if (jumlah <= saldo) {
                     saldo -= jumlah;
-                    cout << "Tarik tunai telah berhasil. Sisa saldo anda adalah: " << saldo << endl ;
+                    cout << "Tarik tunai telah berhasil. Sisa saldo anda adalah: " << (int)saldo << endl ;
                 } else {
                     cout << "Saldo anda tidak mencukupi untuk melakukan tarik tunai" ;
                 }
