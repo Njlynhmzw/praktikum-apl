@@ -14,16 +14,16 @@ int cls() {
 }
 
 int login() {
-    string username, PIN;
+    string nama, NIM;
     int kesempatan = 3;
 
     while (kesempatan > 0) {
-        cout << "Silahkan masukkan username anda: ";
-        cin >> username;
-        cout << "Silahkan masukkan PIN anda: ";
-        cin >> PIN;
+        cout << "Silahkan masukkan Nama anda: ";
+        cin >> nama;
+        cout << "Silahkan masukkan Nim anda: ";
+        cin >> NIM;
 
-        if (username == "nou" && PIN == "066") {
+        if (nama == "nou" && NIM == "066") {
             return 1;
         }
 
@@ -42,7 +42,7 @@ int tampilkanNovel(string novel[][3], int jumlah_novel) {
 
     cout << "\nDaftar Novel:\n";
     cout << "+----+----------------------+----------------------+------------+\n";
-    cout << "| No | Judul               | Penulis             | Harga      |\n";
+    cout << "| No | Judul                | Penulis              | Harga      |\n";
     cout << "+----+----------------------+----------------------+------------+\n";
 
     for (int i = 0; i < jumlah_novel; i++) {
